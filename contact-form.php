@@ -8,9 +8,9 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone']) &&
     define('email','voltaensa@gmail.com');
     $to_email = "yass.jaafar0@gmail.com";
     $subject = "Volta Contact";
-    $body = "<html>
+    $body = "
                 Nom :".$name."<br> Email :".$email."<br> Phone :".$phone."<br> Message:".$message."<br>
-            </html>";
+            ";
  
 if (mail($to_email, $subject, $body,'FROM: '.email))
  
